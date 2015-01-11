@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Power Ministry</title>
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-route.min.js"></script>
+    <script src="js/lib/angular/angular-animate.min.js"></script>
+    <script src="js/myapp.js"></script>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body class="homepage" ng-app="myApp">
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ministries <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog-item.html">Power Institute</a></li>
+                                <li><a href="pricing.html">Gallery</a></li>
+                                <li><a href="shortcodes.html">Directors</a></li>
+                                <li><a href="blog-item.html">Patnership</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contact us</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <!--/#main-slider-->
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Power Ministries International Inc. USA</h1>
+                                    <h2 class="animation animated-item-2">is certified by the United Nations Global Compact</h2>
+                                    <p class="animation animated-item-3">We support universally accepted 10 principles of UNITED NATIONS Global Compact &amp; <br>
+                                        UNITED NATIONS HUMAN RIGHTS &amp; ALL CHARTERS OF UNITED NATIONS</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="images/slider/img1.png" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(images/slider/bg2.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">"Be transformed by the renewing of your mind.." <small style="color:#fff;">Romans 12:2</small></h1>
+                                    <h2 class="animation animated-item-2">Power Institute of Leadership recognizes your leadership and the vast knowledge acquired through life experience.</h2>
+                                    <a class="btn-slide animation animated-item-3" href="http://powerinstituteofleadership.org/">Visit site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(images/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">LEADERSHIP SEMINARS</h1>
+                                    <h2 class="animation animated-item-2">Powerful Christian Leader - 2015, New Jersey USA</h2>
+                                    <h2>May 18th - 22nd 2015</h2>
+                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div>
+    </section>
+
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Welcome to Power Ministries International Inc.</h2>
+               <!--<p>{{3+2}}</p>-->
+                <p class="lead">Need of the hour is to accomplish our vision &amp; mission before the imminent return of our Lord &amp; Savior Jesus Christ. May He empower us to communicate His goodness to the affluent as well as the poor as He prospers us to assist others find their purpose on earth. We speak blessings into your marriage, family, ministry &amp; businesss - Director</p>
+            </div>
+
+            <!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
+
+    <!--/#recent-works-->
+
+    <!--/#services-->
+
+    <!--/#middle-->
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+                   <div class="tab-wrap"> 
+                        <div class="media">
+                            <div class="parrent pull-left">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li class=""><a href="#tab1" data-toggle="tab" class="analistic-01">About Us</a></li>
+                                    <li class="active"><a href="#tab2" data-toggle="tab" class="analistic-02">Leadership Serminars</a></li>
+                                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Donations</a></li>
+                                    <li class=""><a href="#tab4" data-toggle="tab" class="tehnical">Conventions &amp; Crusades</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="parrent media-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab1">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="images/tab2.jpg">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h1>Our Vision</h1>
+                                                 <p>Power Ministries International, Inc., an indigenous movement incorporated in the year 1987 in USA is gearing up with a positive commitment to fulfill its vision. Read More..</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="tab-pane fade active in" id="tab2">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                 <h1>Leadership Seminars</h1>
+                                                 <p>Leadership Seminars. <a href="#">Click here for more details</a><br>
+
+                                                 </p>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                     <div class="tab-pane fade" id="tab3">
+                                        <h1>Donations</h1>
+                                        <!-- //////////////////////////////////////////// -->
+                                        <p>You can become a partner of our ministry by sowing a seed.</p>
+                                        <ul>
+                                            <li>Praying for Power ministries</li>
+                                            <li>Sponsoring one of the projects</li>
+                                            <li>Contributing your might to any one of the projects</li>
+                                        </ul>
+                                        <p><em>Tax Exempted under section 501(c) (3) of the Internal Revenue Service Code.</em></p>
+                                        <!-- Paypal Script goes here -->
+    <p align="center">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <div align="center">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="10712611">
+                <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt=" PayPal - The safer, easier way to pay online!">
+            <img alt="Paypal donate" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </div>
+        </form>
+</p><!-- Paypal Script ends here -->
+<p>For Monthly Payment. <a class="btn-primary animation animated-item-3" href="images/partners/CreditCardForm.doc"><span class="glyphicon glyphicon-folder-open">&nbsp;</span>Download Form</a></p>
+                                     </div>
+                                     <!-- //////////////////////////////////////////// -->
+                                     <div class="tab-pane fade" id="tab4">
+                                        <h1>Conventions &amp; Crusades</h1>
+                                        <p>We conduct various Conventions &amp; Crusades around the world:</p>
+                                        <ul>
+                                            <li>Power Leadership Training</li>
+                                            <li>Church Planting</li>
+                                            <li>Prayer Tower</li>
+                                            <li>Counselling Centres</li>
+                                            <li>Children &amp; youth ministry</li>
+                                            <li>Community development</li>
+                                            <li>Charitable activities</li>
+                                            <li>Power publishing house</li>
+                                        </ul>
+                                     </div>
+                                </div> <!--/.tab-content-->  
+                            </div> <!--/.media-body--> 
+                        </div> <!--/.media-->     
+                    </div><!--/.tab-wrap-->               
+                </div><!--/.col-sm-6-->
+
+                <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                        <h2>Testimonials</h2>
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="images/testimonials1.png">
+                            </div>
+                            <div class="media-body">
+                                <p>Powerful Christian Leadership has been a positive influence in my life and leadership</p>
+                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
+                            </div>
+                         </div>
+
+                         <div class="media testimonial-inner">
+                            <div class="pull-left">
+                                <img class="img-responsive img-circle" src="images/testimonials1.png">
+                            </div>
+                            <div class="media-body">
+                                <p>Powerful Christian Leadership has been a positive influence in my life and leadership</p>
+                                <span><strong>-Pramod</strong> Founder innovoskies.com</span>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#content-->
+
+    <section id="partner">
+        <div class="container" ng-view></div><!--/.container-->
+    </section><!--/#partner-->
+
+<!-- Footer -->
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <small>&copy; PowerMinistry 2015. All Rights Reserved.</small>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">&nbsp;</div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-sm-6 col-xs-4">
+                       <div class="social">
+                            <ul class="pull-left social-share">
+                                <li><a title="facebook group" href="https://www.facebook.com/groups/465321880148603/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
+                       </div>
+                    </div><!-- Social icons ends here -->
+                <div class="col-sm-6 col-xs-8">
+                    <p class="pull-right">
+                            Contact Address: P.O.Box – 866 Milltown New Jersey-08850 USA<br/>
+                    </p>
+                </div>    
+            </div>
+        </div>
+    </footer><!--/#footer ends here-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Angular JS dependencies-->
+</body>
+</html>

@@ -1,0 +1,5 @@
+Colors:
+
+Main: #353546;
+Dark: #242439;
+White: #e7e8ea;
