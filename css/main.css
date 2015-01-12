@@ -2581,8 +2581,48 @@ shortcodes page css
   margin-left: 15px;
 }
 
+.speech {
+    position: relative;
+    top: 0px;
+    /*width: 200px;*/
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+    background-color: #A61A13;
+    border: 2px solid #FF8B78;
 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 
+    /*-webkit-box-shadow: 2px 2px 4px #FF8B78;*/
+    /*-moz-box-shadow: 2px 2px 4px #FF8B78;*/
+    /*box-shadow: 2px 2px 4px #FF8B78;*/
+}
 
+.speech:before
+{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: 28px;
+    border: 11px solid;
+    border-color: #FF8B78 transparent transparent #FF8B78;
+}
+
+.speech:after
+{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 32px;
+    top: 25px;
+    border: 10px solid;
+    border-color: #A61A13 transparent transparent #A61A13;
+}
 
 
