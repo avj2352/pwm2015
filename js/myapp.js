@@ -2,7 +2,7 @@
 /*Adding ngRoute dependency*/
 /*Including appController controller inside the module*/
 /*Creating a controller to handle registration*/
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute','ngAnimate']);
 
 myApp.config(['$routeProvider',function($routeProvider) {
 	$routeProvider.
@@ -19,3 +19,6 @@ myApp.config(['$routeProvider',function($routeProvider) {
 	});
 }]);
 
+myApp.controller('formController', ['$scope',function($scope){
+
+}]);
