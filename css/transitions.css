@@ -3,14 +3,18 @@
     -webkit-animation:0.5s lightSpeedOut ease;
     animation:0.5s lightSpeedOut ease;
 }
-
-
-
 /* when showing the thing */
 .ng-hide-remove      {
     -webkit-animation:0.5s flipInX ease;
     animation:0.5s flipInX ease;
 }
+
+/*ngView animations*/
+.animate.ng-enter{
+    -webkit-animation:0.5s flipInX ease;
+    animation:0.5s flipInX ease;
+}
+/*ngView animations*/
 
 
 
