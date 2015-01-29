@@ -260,6 +260,8 @@
 
   .team .single-profile-top, 
   .team .single-profile-bottom {
+      border: 1px solid #1883ba;
+      padding: 0;
     margin-bottom: 30px;
   }
 
