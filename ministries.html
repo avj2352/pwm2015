@@ -19,6 +19,16 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
+    <!--Angular Dependencies-->
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-route.min.js"></script>
+    <script src="js/lib/angular/angular-animate.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+    <script src="js/myapp.js"></script>
+    <!--Angular Dependencies-->
     <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
@@ -28,7 +38,7 @@
 
 </head><!--/head-->
 
-<body>
+<body ng-app="myApp">
 
 <header id="header">
     <nav class="navbar navbar-inverse" role="banner">
@@ -58,7 +68,6 @@
                         <ul class="dropdown-menu">
                             <li><a href="ministries.html">Trainings</a></li>
                             <li><a href="ministries.html#ministries_section">Ministries</a></li>
-                            <li><a href="ministries.html">Registration</a></li>
                             <li><a href="ministries.html#social_services">Social Services</a></li>
                             <li><a href="ministries.html#partnership_section">Patnership</a></li>
                         </ul>
@@ -72,11 +81,13 @@
 
 <section id="about-us" class="transparent-bg">
     <div>&nbsp;</div>
-    <div class="container">
+    <div class="container" ng-controller="firebaseController">
         <div class="wow fadeInDown center">
             <h2>Trainings</h2>
             <h3 style="font-size: 30px;">Power Institute of Leadership</h3>
-            <p class="lead" align="left">Courses will be conducted for through correspondence and internet, for various degrees. Catalog & Application form can be obtained on request. Intensive One week Training program at USA and India for Leaders & Managers to make them effective in the various areas of Christian work is an integral part of the degree programs. Twice every year in USA. Next session - May 18th - 22nd 2015. Limited seats. Reserve in advance. (Certificates will be given at the end of successful completion) Once in 3 months in India. Details can be given on request.</p>
+            <p class="lead" align="left">Courses will be conducted for through correspondence and internet, for various degrees. Catalog & Application form can be obtained on request. Intensive One week Training program at USA and India for Leaders & Managers to make them effective in the various areas of Christian work is an integral part of the degree programs. Twice every year in USA.
+                Next session - <span style="color: #2964b8; font-weight: bold;">{{events.date}}</span>. Limited seats. Reserve in advance.
+                (Certificates will be given at the end of successful completion) Once in 3 months in India. Details can be given on request.</p>
             <p>You can find out more details online: <a href="http://www.powerinstituteofleadership.org" target="_blank">Power Institute of Leadership</a></p>
             <hr/>
             <a id="ministries_section"></a>

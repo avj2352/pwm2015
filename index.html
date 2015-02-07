@@ -23,6 +23,10 @@
     <script src="js/lib/angular/angular.min.js"></script>
     <script src="js/lib/angular/angular-route.min.js"></script>
     <script src="js/lib/angular/angular-animate.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
     <script src="js/myapp.js"></script>
     <script src="js/controllers/registration.js"></script>
     <link rel="shortcut icon" href="images/ico/favicon.ico">
@@ -60,7 +64,6 @@
                         <ul class="dropdown-menu">
                             <li><a href="ministries.html">Trainings</a></li>
                             <li><a href="ministries.html#ministries_section">Ministries</a></li>
-                            <li><a href="ministries.html">Registration</a></li>
                             <li><a href="ministries.html#social_services">Social Services</a></li>
                             <li><a href="ministries.html#partnership_section">Patnership</a></li>
                         </ul>
@@ -122,10 +125,10 @@
                 <div class="container">
                     <div class="row slide-margin">
                         <div class="col-sm-6">
-                            <div class="carousel-content">
+                            <div class="carousel-content" ng-controller="firebaseController">
                                 <h1 class="animation animated-item-1">LEADERSHIP SEMINARS</h1>
-                                <h2 class="animation animated-item-2">Powerful Christian Leader - 2015, New Jersey USA</h2>
-                                <h2>May 18th - 22nd 2015</h2>
+                                <h2 class="animation animated-item-2">{{events.name}}&nbsp;{{events.venue}}</h2>
+                                <h2>{{events.date}}</h2>
                                 <a class="btn-slide animation animated-item-3" href="ministries.html">Read More</a>
                             </div>
                         </div>
@@ -141,7 +144,8 @@
         <div class="center wow fadeInDown">
             <h2>Welcome to Power Ministries International Inc.</h2>
             <!--<p>{{3+2}}</p>-->
-            <p class="lead">Need of the hour is to accomplish our vision &amp; mission before the imminent return of our Lord &amp; Savior Jesus Christ. May He empower us to communicate His goodness to the affluent as well as the poor as He prospers us to assist others find their purpose on earth. We speak blessings into your marriage, family, ministry &amp; businesss - Director</p>
+            <p class="lead">Need of the hour is to accomplish our vision &amp; mission before the imminent return of our Lord &amp; Savior Jesus Christ. May He empower us to communicate His goodness to the affluent as well as the poor as He prospers us to assist others find their purpose on earth. We speak blessings into your marriage, family, ministry &amp; businesss
+                <br/> - Director</p>
         </div>
 
         <!--/.row-->
@@ -185,12 +189,14 @@
 
                                 <div class="tab-pane fade" id="tab2">
                                     <div class="media">
-                                        <div class="media-body">
+                                        <div class="media-body" ng-controller="firebaseController">
                                             <h1>Leadership Seminars</h1>
                                             <iframe src="http://player.vimeo.com/video/97728220" frameborder="0" width="100%" height="240"></iframe>
                                             <p>
-                                                Power Ministry conducts various Leadership Seminars. To register for the conference please scroll down and click the below button to register
-                                                <br/>
+                                                Power Ministry conducts various Leadership Seminars. <br/>
+                                                Next Conference: <strong>{{events.name}}&nbsp;{{events.venue}}</strong><br/>
+                                                <span style="color: #2964b8">{{events.date}}</span><br/>
+                                                To register for the conference please scroll down and click the below button to register.
                                                 You can also email us at <a href="mailto:intlpowerministries@gmail.com">intlpowerministries@gmail.com</a> to find out more about the details.
                                             </p>
                                         </div>
