@@ -1,4 +1,11 @@
 <?php
+/*Simple Redirect Helper Function*/
+function redirect($url, $statusCode = 303)
+{
+    header('Location: ' . $url, true, $statusCode);
+    die();
+}/*end function: redirect*/
+
 	header('Content-type: application/json');
 	$status = array(
 		'type'=>'success',
@@ -11,7 +18,7 @@
     $message = @trim(stripslashes($_POST['message'])); 
 
     $email_from = $email;
-    $email_to = 'amarjing@gmail.com';//replace with your email
+    $email_to = 'intlpowerministries@gmail.com';//replace with your email
     $subject = "Powerful Conference - Contact Us". $name;
 
     $body = 'Dear Admin '. $name . " has sent an email. Please find the details below: \n\n" ;
@@ -22,5 +29,6 @@
 
     $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
 
-    echo json_encode($status);
-    die;
+    /*To Debug uncomment the below line else redirect the page to success.html*/
+    //echo json_encode($status);
+    redirect("http://www.powerministry.info/success.html");

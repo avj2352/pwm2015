@@ -272,6 +272,7 @@ input.search-form:hover {
 }
 
 .navbar {
+  /*border: 1px solid red;*/
   border-radius: 0;
   margin-bottom: 0;
   background: #454559 url(../images/navigation.png) 50% -2px repeat-x;
@@ -373,7 +374,14 @@ input.search-form:hover {
   padding-bottom: 0;
 }
 
+/*Navbar Position on different screens - iPhone and iPad*/
 @media(max-width:390px){
+    .navbar {
+        /*border: 1px solid red;*/
+        background-position: 50% 115px;
+        padding: 15px 0;
+        padding-bottom: 0;
+    }
   .navbar-brand img{
     position: relative;
     /*border: 1px solid red;*/
@@ -381,8 +389,18 @@ input.search-form:hover {
   width: 50%;
   height: auto;
   }
-}
+} /*end iPhone screen*/
 
+/*iPad Screen*/
+@media (min-width: 391px) and (max-width: 768px){
+    .navbar {
+        /*border: 1px solid red;*/
+        background-position: 50% 74px;
+        padding: 15px 0;
+        padding-bottom: 10px;
+    }
+}/*end iPad Screen*/
+/*end Navbar Position on different screens - iPhone and iPad*/
 
 /*************************
 *******Home Page******
